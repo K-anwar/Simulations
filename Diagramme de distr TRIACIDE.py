@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-pk1, pk2, pk3 = float(input()), float(input()), float(input())
+
+pk1, pk2, pk3 = float(input("Entrer pKa1 :")), float(input("Entrer pKa2 :")), float(input("Entrer pKa3 :"))
 
 x = np.linspace(0, 14, 60)
 y1 = 1/(1+ 10**(x-pk1) + 10**(2*x-(pk1+pk2)) + 10**(3*x-(pk1+pk2+pk3)))
